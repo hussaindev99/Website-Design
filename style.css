@@ -989,7 +989,10 @@ footer .social a:hover {
     .timeline-item:nth-child(even) {
         padding-left: 37px;
     }
-
+.timeline-item{
+height: 300px;
+width: 350px;
+}
     .timeline-dot {
         left: 0;
     }
@@ -1005,17 +1008,20 @@ footer .social a:hover {
     .contact form {
         flex-direction: column;
     }
-    .footer{
+
+    .footer {
         padding: 2rem 3%;
     }
 }
-@media(max-width:895px){
-    #menu-icon{
+
+@media(max-width:895px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
-        top: 100%; 
+        top: 100%;
         right: 0;
         width: 50%;
         padding: 1rem 3%;
@@ -1026,40 +1032,90 @@ footer .social a:hover {
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar .active{
-        display: block;
-        font-size: 2rem;
-        margin:  3rem 0;
-        color: white;
-    }
-    .navbar a{
+
+    .navbar .active {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
-    .home{
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 600px;
         margin-top: 3rem;
     }
-    .home-img img{
+
+    .home-img img {
         width: 56vw;
     }
-    .services h2{
+
+    .services h2 {
         margin-bottom: 3rem;
     }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+        justify-content: center;
     }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #000000;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+        padding: 10px;
+        /* border-top: 1px solid #ddd; */
+    }
+
+    .navbar a:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .bx-menu {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .heading {
+        font-size: 6rem;
+        text-align: center;
+        margin: 5rem 0;
+    }
+
 }
